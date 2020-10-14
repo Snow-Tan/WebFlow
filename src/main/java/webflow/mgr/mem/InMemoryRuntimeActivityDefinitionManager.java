@@ -1,0 +1,31 @@
+package webflow.mgr.mem;
+
+
+import webflow.ctrl.RuntimeActivityDefinitionEntity;
+import webflow.ctrl.RuntimeActivityDefinitionManager;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class InMemoryRuntimeActivityDefinitionManager implements RuntimeActivityDefinitionManager
+{
+	private static List<RuntimeActivityDefinitionEntity> _list = new ArrayList<RuntimeActivityDefinitionEntity>();
+
+	@Override
+	public List<RuntimeActivityDefinitionEntity> list()
+	{
+		return _list;
+	}
+
+	@Override
+	public void removeAll()
+	{
+		_list.clear();
+	}
+
+	@Override
+	public void save(RuntimeActivityDefinitionEntity entity)
+	{
+		_list.add(entity);
+	}
+}
