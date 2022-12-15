@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <org.springframework-version>5.1.5.RELEASE</org.springframework-version>
+        <org.springframework-version>5.2.20.RELEASE</org.springframework-version>
         <activiti-version>5.22.0</activiti-version>
         <hibernate-version>4.2.0.Final</hibernate-version>
         <poi-version>3.10.1</poi-version>
